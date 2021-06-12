@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/DevelopersToolbox/caretaker) by [Wolf Software](https://github.com/WolfSoftware)
 
-### [v0.1.0](https://github.com/DevelopersToolbox/ruby-snippets/releases/v0.1.0)
+### [Unreleased](https://github.com/DevelopersToolbox/ruby-snippets/compare/v0.1.0...HEAD)
 
-> Released on June, 12th 2021
+- Update travis slack integration due to new slack organisation [`[head]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/)
 
-- The initial commit [`[head]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/)
+- The initial commit [`[7a55feb]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/7a55feb0bd891c623932251713db57600740c21f)
 
