@@ -1,0 +1,8 @@
+AllCops:
+  TargetRubyVersion: 3.0
+
+Layout/IndentationWidth:
+    Width: 4
+
+Style/FrozenStringLiteralComment:
+    Enabled: false

@@ -1,0 +1,64 @@
+matrix:
+  include:
+  - language: ruby
+    name: Rubocop (rvm 2.6)
+    rvm: 2.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/rubocop
+    install:
+    - "./rubocop/install.sh"
+    script:
+    - "./rubocop/scan.sh"
+  - language: ruby
+    name: Rubocop (rvm 2.7)
+    rvm: 2.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/rubocop
+    install:
+    - "./rubocop/install.sh"
+    script:
+    - "./rubocop/scan.sh"
+  - language: ruby
+    name: Rubocop (rvm 3.0)
+    rvm: 3.0
+    before_install:
+    - git clone https://github.com/TravisToolbox/rubocop
+    install:
+    - "./rubocop/install.sh"
+    script:
+    - "./rubocop/scan.sh"
+  - language: ruby
+    name: YAML Linting (rvm 3.0)
+    rvm: 3.0
+    before_install:
+    - git clone https://github.com/TravisToolbox/yaml-lint
+    install:
+    - "./yaml-lint/install.sh"
+    script:
+    - "./yaml-lint/scan.sh"
+  - language: bash
+    name: Shellcheck (Bash)
+    os: linux
+    arch: arm64-graviton2
+    before_install:
+    - git clone https://github.com/TravisToolbox/shellcheck
+    install:
+    - "./shellcheck/install.sh"
+    script:
+    - "./shellcheck/scan.sh"
+  - language: ruby
+    name: Link Checking (rvm 3.0)
+    rvm: 3.0
+    env:
+    - WHITELIST="https://img.shields.io"
+    - EXCLUDE_FILES="CHANGELOG.md"
+    before_install:
+    - git clone https://github.com/TravisToolbox/awesomebot
+    install:
+    - "./awesomebot/install.sh"
+    script:
+    - "./awesomebot/scan.sh"
+notifications:
+  email: false
+  slack:
+    secure: XfyFyV9GiybwFPLp6F/uO/ZDdt1CF+VR6e6SWrTsEN4aQAEOuf1SQeAoFpCDqKtkzCQ8WY59XMNjecDEKXjifKZ1T6cNBHTJEYeZPH3bZNjUjW2Ve4FaJnPDl+YAYfBfJ+qLdoheEaslAgNinH+PTAh9A9jwLvyERZs4tVlAWMdhL3nyaRGVJukY0nTFr26C8Fbvwr4SO1nysd2Z9mtoTctuP0qOSn/DYMZ60/1mF4AGYgk9PuKInZGbNbGSqfl64fPb44EhDtn6V3FkTj+D6AEjU7hUTDFoyFz8YAzBy4RW4K7/U5XjqaHbrCEP22Y0mYZbU2kNXQf3mM/QMqMimPayzyXpm6a8Nl+Xvp1biDFW6UgDm0XcyxrZjwD9+l1ZsFnsbNLj5CvF2w9WlnYY4pMUPd11yaE7ATSRR1REujO7j6jlmxjxwYp+NcO64RW3qbppWTuW18UnHwcNLQmBlzSBoyWuWTi7h9LjRuvpjo33B5CfvgUWjWw/HVpOHjq4YmrTy6iWbZpA86yL6aePBlv1EEwgBBe4ha95E7ARdEsV/Zsw3VIAw48qoZf0f4IsV0Duzqo1KPMROM6FGk+hD/AjqPcTrKM6KU+VOD9dfc/J/SCRjJEwxyiYbmgdbp2VsD9ru5o8xGIAuWzS1JtHcaTCMQjP+iosAAP5mFUFxB4=
