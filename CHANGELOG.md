@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/DevelopersToolbox/ruby-snippets/compare/v0.1.0...HEAD)
 
-- Update travis slack integration due to new slack organisation [`[head]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/)
+- rebrand [`[head]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/)
+
+- Update travis slack integration due to new slack organisation [`[183f3a7]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/183f3a7a1dbedc297b99ecf9e28511d8a32e27ef)
 
 - The initial commit [`[7a55feb]`](https://github.com/DevelopersToolbox/ruby-snippets/commit/7a55feb0bd891c623932251713db57600740c21f)
 
